@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[twocolumn]{article}
 \usepackage{amsmath, amssymb, graphicx}
 \usepackage{amsmath, tikz, amssymb}
 \usetikzlibrary{circuits.logic.US, positioning}
@@ -20,15 +20,12 @@
 \usepackage{titlesec}
 \usepackage{graphicx}
 
-\title{Introduction to Logic circuits}
-\author{Group 9}
+\title{Group\_9(6)\_Fundamental\_of\_digital\_logic\_with\_verilog\_design\_2\_2.1-2.11}
 \date{}
 
 \begin{document}
 
 \maketitle
-
-
 
 \section{Introduction}
 Binary circuits dominate digital systems due to their simplicity. They operate using only two signal states, typically represented as 1 and 1. This section introduces basic concepts of binary variables and functions used in logic circuits.
@@ -44,7 +41,7 @@ Figure \ref{fig:switch} illustrates this concept.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.6\textwidth]{switch_diagram.png} % Placeholder
+\includegraphics[width=0.4\textwidth]{switch_diagram.png} % Placeholder
 \caption{A binary switch representation.}
 \label{fig:switch}
 \end{figure}
@@ -73,7 +70,7 @@ Figure \ref{fig:series_parallel} demonstrates these configurations.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.6\textwidth]{series_parallel.png} % Placeholder
+\includegraphics[width=0.4\textwidth]{series_parallel.png} % Placeholder
 \caption{Series and parallel switch connections.}
 \label{fig:series_parallel}
 \end{figure}
@@ -83,7 +80,7 @@ A switch can be used in an inverting circuit where closing the switch turns off 
 
 \begin{figure}[!ht]
 \centering
-\begin{circuitikz}
+\begin{circuitikz}[scale=0.7]
 \tikzstyle{every node}=[font=\large]
 \draw (4.5,11) to[battery1] (4.5,8.75);
 \node [font=\large] at (3.5,9.75) {Supply};
@@ -181,28 +178,37 @@ Logic gates are the building blocks of digital circuits. They implement logical 
 Below are the diagrams and descriptions of the fundamental logic gates used in digital circuits.
 
 \begin{figure}[ht]
-    \centering
-    \begin{tikzpicture}[circuit logic US, every circuit symbol/.style={fill=white, draw}, scale=1]
-        % AND Gate
-        \node (and) [and gate, inputs={normal, normal}] at (0,0) {};
-        \draw (and.input 1) -- ++(-0.5,0) node[left] {$A$};
-        \draw (and.input 2) -- ++(-0.5,0) node[left] {$B$};
-        \draw (and.output) -- ++(0.5,0) node[right] {$Q = A \cdot B$};
-        \node[below] at (0, -1) {AND Gate};
-        % OR Gate
-        \node (or) [or gate, inputs={normal, normal}] at (4,-2) {};
-        \draw (or.input 1) -- ++(-0.5,0) node[left] {$A$};
-        \draw (or.input 2) -- ++(-0.5,0) node[left] {$B$};
-        \draw (or.output) -- ++(0.5,0) node[right] {$Q = A + B$};
-        \node[below] at (4, -3) {OR Gate};
-        % NOT Gate
-        \node (not) [not gate, inputs={normal}] at (8,0) {};
-        \draw (not.input) -- ++(-0.5,0) node[left] {$A$};
-        \draw (not.output) -- ++(0.5,0) node[right] {$Q = \bar{A}$};
-        \node[below] at (9, -1) {NOT Gate};
+  \centering
+  \resizebox{\columnwidth}{!}{%
+    \begin{tikzpicture}[circuit logic US,
+                        every circuit symbol/.style={fill=white, draw},
+                        scale=0.5,          % Initial scale inside TikZ
+                        transform shape]    % Also scale the text and symbols
+      % AND Gate
+      \node (and) [and gate, inputs={normal, normal}] at (0,0) {};
+      % Increase the offset (from -0.5 to -1) so the labels don't crowd the gate
+      \draw (and.input 1) -- ++(-1,0) node[left] {$A$};
+      \draw (and.input 2) -- ++(-1,0) node[left] {$B$};
+      \draw (and.output) -- ++(1,0) node[right] {$Q = A \cdot B$};
+      \node[below] at (0,-1) {AND Gate};
+
+      % OR Gate
+      \node (or) [or gate, inputs={normal, normal}] at (4,-2) {};
+      \draw (or.input 1) -- ++(-1,0) node[left] {$A$};
+      \draw (or.input 2) -- ++(-1,0) node[left] {$B$};
+      \draw (or.output) -- ++(1,0) node[right] {$Q = A + B$};
+      \node[below] at (4,-3) {OR Gate};
+
+      % NOT Gate
+      \node (not) [not gate, inputs={normal}] at (8,0) {};
+      \draw (not.input) -- ++(-1,0) node[left] {$A$};
+      \draw (not.output) -- ++(1,0) node[right] {$Q = \bar{A}$};
+      \node[below] at (9,-1) {NOT Gate};
     \end{tikzpicture}
-    \caption{Basic Logic Gates: AND, OR, and NOT}
+  }
+  \caption{Basic Logic Gates: AND, OR, and NOT}
 \end{figure}
+
 \pagebreak
 
 \subsection{Analysis of a Logic Network}
@@ -216,31 +222,36 @@ Analyzing a logic network involves understanding the function performed by a com
 
 \subsection{Example Analysis: Two-Level Logic Network}
 Consider the following circuit with an AND gate and an OR gate:
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
-    \begin{tikzpicture}[circuit logic US, every circuit symbol/.style={fill=white, draw}, scale=1]
-        % Input wires
-        \node at (-2, -0.4) (in1) {$A$};
-        \node at (-2, -0.6  ) (in2) {$B$};
-        \node at (-2, -1.6) (in3) {$C$};
-        \node at (1, -1.5) (in4) {};
-        \node at (1, -0.6) (in5) {};
-        
-        % Gates
-        \node[and gate, inputs={normal, normal}] (and1) at (0, -0.5) {};
-        \node[or gate, inputs={normal, normal}] (or1) at (2, -0.6) {};
-        
-        % Wiring
-        \draw (in1.east) -- (and1.input 1);
-        \draw (in2.east) -- (and1.input 2);
-        \draw (in3.east) -- (in4);
-        \draw (in4.west) -- (in5);
-        \draw (in5.south) -- (or1.input 2);
-        \draw (and1.output) -- (or1.input 1);
-        \draw (or1.output) -- ++(0.5, 0) node[right] {$Q$};
-    \end{tikzpicture}
+    % Use \resizebox to scale the diagram to the current column width.
+    \resizebox{\columnwidth}{!}{%
+        % Add 'transform shape' so that text is scaled along with the drawing.
+        \begin{tikzpicture}[circuit logic US, every circuit symbol/.style={fill=white, draw}, scale=0.7, transform shape]
+            % Input wires -- moved further left (x=-2.5) for extra room
+            \node at (-2.5, -0.4) (in1) {$A$};
+            \node at (-2.5, -0.6) (in2) {$B$};
+            \node at (-2.5, -1.6) (in3) {$C$};
+            \node at (1, -1.5) (in4) {};
+            \node at (1, -0.6) (in5) {};
+            
+            % Gates
+            \node[and gate, inputs={normal, normal}] (and1) at (0, -0.5) {};
+            \node[or gate, inputs={normal, normal}] (or1) at (2, -0.6) {};
+            
+            % Wiring
+            \draw (in1.east) -- (and1.input 1);
+            \draw (in2.east) -- (and1.input 2);
+            \draw (in3.east) -- (in4);
+            \draw (in4.west) -- (in5);
+            \draw (in5.south) -- (or1.input 2);
+            \draw (and1.output) -- (or1.input 1);
+            \draw (or1.output) -- ++(0.5, 0) node[right] {$Q$};
+        \end{tikzpicture}
+    }
     \caption{Two-level logic network with AND and OR gates.}
 \end{figure}
+
 
 \noindent Analysis Steps:
 \begin{itemize}
@@ -274,9 +285,9 @@ Boolean algebra provides a formal framework for designing and analyzing logic ci
 Venn diagrams visualize the relationships between sets and are used to represent Boolean operations graphically.
 \begin{figure}[h]
     \centering
-    \begin{tikzpicture}
+    \begin{tikzpicture}[scale=0.7]
         \draw[thick] (0, 0) rectangle (4, 4);
-        \node[above left] at (0, 4) {$Universal\ Space$};
+        \node[above left] at (0, 4) {};
         \draw[thick, fill=gray!30] (1, 1) circle [radius=1];
         \node at (1, 1) {$A$};
     \end{tikzpicture}
@@ -387,7 +398,7 @@ The function \( f \) is expressed as:
 This expression cannot be simplified further.
 \begin{figure}[h!]
   \centering
-  \resizebox{1\textwidth}{!}{%
+  \resizebox{0.7\textwidth}{!}{%
     \begin{circuitikz}
       \tikzstyle{every node}=[font=\small]
 
@@ -471,12 +482,13 @@ This expression cannot be simplified further.
   \textbf{Product-of-Sums Form}\newline
   The function $f$ can also be expressed as:
   \begin{align*}
-    f = M_0 \cdot M_3 \cdot M_5 \cdot M_6 = (x_1 + x_2 + x_3)(x_1 + \overline{x_2} + \overline{x_3})(\overline{x_1} + x_2 + \overline{x_3})(\overline{x_1} + \overline{x_2} + x_3)
+    f = M_0 \cdot M_3 \cdot M_5 \cdot M_6 = (x_1 + x_2 + x_3)(x_1 + \overline{x_2} + \overline{x_3})\\
+    (\overline{x_1} + x_2 + \overline{x_3})(\overline{x_1} + \overline{x_2} + x_3)
   \end{align*}
   This form has the same cost as the sum-of-products realization.\newline
 \begin{figure}[h!]
 \centering
-\resizebox{1\textwidth}{!}{%
+\resizebox{0.5\textwidth}{!}{%
 \begin{circuitikz}
 \tikzstyle{every node}=[font=\small]
 \draw (10,15.75) to[short] (10.25,15.75);
@@ -613,7 +625,7 @@ This expression cannot be simplified further.
   A 2-to-1 multiplexer can be built using the basic $AND, OR, NOT$ gates
   \begin{figure}[!ht]
     \centering
-    \resizebox{1\textwidth}{!}{%
+    \resizebox{0.5\textwidth}{!}{%
       \begin{circuitikz}
         \tikzstyle{every node}=[font=\small]
         \draw (8.75,15.75) to[short] (9,15.75);
@@ -660,7 +672,7 @@ This expression cannot be simplified further.
         \item \textbf{Truth Tables}: Suitable for small circuits or subcircuits. CAD tools can transform truth tables or even waveforms into logic gate networks. One example of a waveform being given as input is,
           \begin{figure}[h!]
             \centering
-            \includegraphics[width = 0.6\textwidth]{waveform.png}
+            \includegraphics[width = 0.5\textwidth]{waveform.png}
             \label{stemplot}
           \end{figure}
           It is not suitable for larger circuits.
@@ -704,7 +716,7 @@ This expression cannot be simplified further.
       \subsubsection{Summary}
 \begin{figure}[ht!]
             \centering
-            \includegraphics[scale=0.6]{flowchart.png}
+            \includegraphics[scale=0.4]{flowchart.png}
             \label{stemplot}
           \end{figure} 
 
@@ -730,7 +742,7 @@ Example of a simple logic circuit in Verilog:
 
 \begin{figure}[h!]
    \centering
-   \includegraphics[width=\linewidth]{example.jpg}
+   \includegraphics[width=0.7\linewidth]{example.jpg}
 	\caption{Simple logic function}
    \label{stemplot}
 \end{figure}
@@ -844,5 +856,6 @@ Simulation tools allow observation of waveforms and the detection of errors. Com
 This summary introduced digital circuits, Verilog coding styles, Boolean algebra, and sequential circuit design. For practical implementation, CAD tools and testbenches help verify correctness. Future topics include hardware technologies and optimization techniques.
 
 \end{document}
+
 
 

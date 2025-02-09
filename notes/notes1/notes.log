@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.31)  3 FEB 2025 11:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.31)  9 FEB 2025 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -760,24 +760,24 @@ LaTeX Warning: Label `stemplot' multiply defined.
 )
 \openout1 = `notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
  (/opt/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count337
@@ -800,7 +800,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 26.
 
 (./notes.out) (./notes.out)
 \@outlinefile=\write4
@@ -831,187 +831,335 @@ Package caption Info: End \AtBeginDocument code.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count343
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+
+Overfull \hbox (30.64888pt too wide) in paragraph at lines 29--29
+ \OT1/cmr/m/n/17.28 Group[]9(6)[]Fundamental[]of[]digital[]logic[]with[]verilog
+[]design[]2[]2.1- 
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
 
 (/opt/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
 
 
 (/opt/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+LaTeX Warning: No \author given.
+
 <switch_diagram.png, id=200, 464.73625pt x 376.40625pt>
 File: switch_diagram.png Graphic file (type png)
 <use switch_diagram.png>
-Package pdftex.def Info: switch_diagram.png  used on input line 47.
-(pdftex.def)             Requested size: 258.00539pt x 208.97112pt.
-
+Package pdftex.def Info: switch_diagram.png  used on input line 44.
+(pdftex.def)             Requested size: 171.99922pt x 139.30833pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<series_parallel.png, id=202, 375.4025pt x 358.33875pt>
+
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 61--62
+[]\OT1/cmr/bx/n/10 Parallel Con-nec-tion\OT1/cmr/m/n/10 : Light turns on
+ []
+
+
+
+[1{/opt/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+{/opt/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./swi
+tch_diagram.png>]
+<series_parallel.png, id=220, 375.4025pt x 358.33875pt>
 File: series_parallel.png Graphic file (type png)
 <use series_parallel.png>
-Package pdftex.def Info: series_parallel.png  used on input line 76.
-(pdftex.def)             Requested size: 258.00539pt x 246.29167pt.
+Package pdftex.def Info: series_parallel.png  used on input line 73.
+(pdftex.def)             Requested size: 171.99922pt x 164.18169pt.
 
 
-[1
 
-{/opt/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive/2
-024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+[2 <./series_parallel.png>]
+Underfull \vbox (badness 7649) has occurred while \output is active []
+
+
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[2 <./switch_diagram.png>]
+[3]
 
-[3 <./series_parallel.png>]
+
+Overfull \hbox (8.40248pt too wide) detected at line 337
+[]
+ []
+
+
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+|[]\OT1/cmr/bx/n/14.4 Synthesis Us-ing AND,
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+|[]\OT1/cmr/bx/n/12 Sum-of-Products and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 346--352
+\OT1/cmr/m/it/10 Minterms \OT1/cmr/m/n/10 - For a func-tion of $\OML/cmm/m/it/1
+0 n$ \OT1/cmr/m/n/10 vari-ables,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 346--352
+\OT1/cmr/m/n/10 Sum-of-Products form - A func-tion $\OML/cmm/m/it/10 f$ \OT1/cm
+r/m/n/10 can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 346--352
+\OT1/cmr/m/it/10 Product-of-Sums \OT1/cmr/m/n/10 - The ex-pres-sion that rep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+
+ []
+
+
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 356--356
+|[]\OT1/cmr/bx/n/14.4 NAND and NOR Logic
+ []
 
 
 
 [5]
 
-[6]
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 335--341
-
+Overfull \hbox (71.4511pt too wide) detected at line 397
+[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--341
-
+Overfull \hbox (90.99792pt too wide) in paragraph at lines 401--478
+ [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--341
-
+Overfull \hbox (26.70544pt too wide) detected at line 487
+[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--341
-
+Overfull \hbox (5.00438pt too wide) in paragraph at lines 491--557
+ [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--341
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--341
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--341
-
- []
-
-
-
-[8]
-
-[9]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (20.44049pt too wide) in paragraph at lines 569--570
-[]\OT1/cmr/m/n/10 In com-puter sys-tems, it is of-ten nec-es-sary to se-lect da
-ta from ex-actly one of sev-eral sources.Consider
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
 
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 592--593
+
+Underfull \hbox (badness 1406) in paragraph at lines 604--605
+[]\OT1/cmr/m/n/10 A cir-cuit im-ple-ment-ing this func-tion is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--605
 
  []
 
 
+Overfull \hbox (5.00179pt too wide) in paragraph at lines 628--657
+ [][][] 
+ []
 
-[11]
 
-[12]
-<waveform.png, id=290, 762.85pt x 208.78pt>
+
+[7]
+<waveform.png, id=270, 762.85pt x 208.78pt>
 File: waveform.png Graphic file (type png)
 <use waveform.png>
-Package pdftex.def Info: waveform.png  used on input line 663.
-(pdftex.def)             Requested size: 258.00539pt x 70.61151pt.
-<sc.png, id=291, 786.94pt x 259.97125pt>
+Package pdftex.def Info: waveform.png  used on input line 675.
+(pdftex.def)             Requested size: 215.0023pt x 58.84027pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 675--677
+ [][] 
+ []
+
+<sc.png, id=271, 786.94pt x 259.97125pt>
 File: sc.png Graphic file (type png)
 <use sc.png>
-Package pdftex.def Info: sc.png  used on input line 670.
+Package pdftex.def Info: sc.png  used on input line 682.
 (pdftex.def)             Requested size: 258.00539pt x 85.23145pt.
 
+Overfull \hbox (48.00308pt too wide) in paragraph at lines 682--684
+ [][] 
+ []
 
-[13 <./waveform.png (PNG copy)> <./sc.png (PNG copy)>]
-<flowchart.png, id=302, 593.21625pt x 775.89874pt>
+
+Underfull \hbox (badness 1019) in paragraph at lines 679--686
+\OT1/cmr/m/n/10 bols to rep-re-sent logic gates and in-ter-
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 686--688
+[]\OT1/cmr/bx/n/10 Hardware De-scrip-tion Lan-guages
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 pro-gram-ming lan-guages ex-cept, HDL's
+ []
+
+
+Underfull \hbox (badness 3579) in paragraph at lines 686--688
+\OT1/cmr/m/n/10 with-out hav-ing to change the Ver-ilog
+ []
+
+
+
+
+
+[8 <./waveform.png (PNG copy)> <./sc.png (PNG copy)>]
+<flowchart.png, id=281, 593.21625pt x 775.89874pt>
 File: flowchart.png Graphic file (type png)
 <use flowchart.png>
-Package pdftex.def Info: flowchart.png  used on input line 707.
-(pdftex.def)             Requested size: 355.9325pt x 465.54283pt.
+Package pdftex.def Info: flowchart.png  used on input line 719.
+(pdftex.def)             Requested size: 237.28229pt x 310.354pt.
+
+Overfull \hbox (27.27998pt too wide) in paragraph at lines 719--721
+ [][] 
+ []
 
 
-[14]
+Underfull \hbox (badness 2538) in paragraph at lines 730--731
+\OT1/cmr/m/n/10 Verilog is a hard-ware de-scrip-tion lan-guage
+ []
 
-[15 <./flowchart.png (PNG copy)>]
-<example.jpg, id=317, 904.1278pt x 447.92343pt>
+
+
+<example.jpg, id=282, 904.1278pt x 447.92343pt>
 File: example.jpg Graphic file (type jpg)
 <use example.jpg>
-Package pdftex.def Info: example.jpg  used on input line 733.
-(pdftex.def)             Requested size: 430.00462pt x 213.0324pt.
+Package pdftex.def Info: example.jpg  used on input line 745.
+(pdftex.def)             Requested size: 147.00096pt x 72.82428pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[9 <./flowchart.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
-52.
+64.
 
 (/opt/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 752.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 764.
+
+Underfull \hbox (badness 3792) in paragraph at lines 776--776
+|[]\OT1/cmr/bx/n/12 Boolean Al-ge-bra and Logic
+ []
 
 
-[16 <./example.jpg>]
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 792--792
+|[]\OT1/cmr/bx/n/12 Verilog Syn-tax and Cod-ing
+ []
+
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 8
-06.
- (/opt/texlive/2024/texmf-dist/tex/latex/base/omlcmr.fd
+18.
+(/opt/texlive/2024/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 806.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 818.
 
 
-[17]
+[10 <./example.jpg>]
+Overfull \hbox (18.00002pt too wide) in paragraph at lines 825--826
+[][][][][][][][][][][][][][][][][] 
+ []
 
-[18] (./notes.aux)
+
+Overfull \hbox (108.00093pt too wide) in paragraph at lines 842--843
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+
+
+[11
+
+] (./notes.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1024,10 +1172,10 @@ Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: C1FCDAB60A725D4074C2D5763F137969;8083.
  ) 
 Here is how much of TeX's memory you used:
- 46916 strings out of 473201
- 1116855 string characters out of 5685387
- 1789707 words of memory out of 5000000
- 69567 multiletter control sequences out of 15000+600000
+ 46889 strings out of 473201
+ 1116185 string characters out of 5685387
+ 1798100 words of memory out of 5000000
+ 69547 multiletter control sequences out of 15000+600000
  569391 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,16n,91p,886b,1256s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1048,10 +1196,10 @@ t/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/texlive/2024/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/
 public/cm-super/sfrm1000.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/c
 m-super/sftt1000.pfb>
-Output written on notes.pdf (18 pages, 721261 bytes).
+Output written on notes.pdf (11 pages, 722131 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 414 compressed objects within 5 object streams
- 138 named destinations out of 1000 (max. 500000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 131 named destinations out of 1000 (max. 500000)
  427 words of extra memory for PDF output out of 10000 (max. 10000000)
 
